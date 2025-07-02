@@ -4,13 +4,19 @@
   "description": "A simple web-based memory game using Node.js and Express.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "echo 'No build step required'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public"
   },
   "dependencies": {
     "express": "^4.18.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "homepage": "https://PrabhashDiss.github.io/memory-game"
 }
